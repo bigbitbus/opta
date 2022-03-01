@@ -22,4 +22,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           # Path to SARIF file relative to the root of the repository
+          working_directory: modules/aws_base/tf_module
           sarif_file: tfsec.sarif         
